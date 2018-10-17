@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name=viewport content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+<center><h1>Calculator</h1></center>
+<div class="calculator">
+	<div class="display"> 
+    <input type="text" name="afisaj" id="display" readonly>
+	</div>
+	<div class="butoane">	
+	<button id="bt1" onclick="show_nr(1)">1</button>
+	<button id="bt2" onclick="show_nr(2)">2</button>
+	<button id="bt3" onclick="show_nr(3)">3</button>	
+	<button id="bt4" onclick="show_nr(4)">4</button>
+	<button id="bt5" onclick="show_nr(5)">5</button>
+	<button id="bt6" onclick="show_nr(6)">6</button>
+	<button id="bt7" onclick="show_nr(7)">7</button>
+	<button id="bt8" onclick="show_nr(8)">8</button>
+	<button id="bt9" onclick="show_nr(9)">9</button>
+	<button id="bt0" onclick="show_nr('0')">0</button> 
+	<button id="reset" onclick="reset()" >C</button>
+	<button id="delete" onclick="delete_nr()">AC</button>
+	<button class="operator" onclick="operation('+')">+</button>
+	<button class="operator" onclick="operation('-')">-</button>
+	<button class="operator" onclick="operation('*')">*</button>
+	<button class="operator" onclick="operation('/')">/</button>
+	<button id="decimal">.</button>
+	<button id="equals" onclick="equals()">=</button>
+    </div>
+
+</div>
+
+</body>
+<script type="text/javascript" src="main.js"></script>
+
+</html>
